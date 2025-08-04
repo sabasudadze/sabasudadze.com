@@ -27,4 +27,5 @@ jobs:
             --exclude ".github/*" \
             --exclude "README.md" \
             --delete \
-            --acl public-read
+          aws s3 sync ./ s3://sabasudadze.com --delete
+
